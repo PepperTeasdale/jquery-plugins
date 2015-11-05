@@ -24,6 +24,7 @@ html, body, div, img {
 
 .thumbnails {
   width: 400px;
+  margin: 50px auto;
 }
 
 div.active {
