@@ -21,3 +21,15 @@ body, html, h1, ul, li, head, section, article, a {
 ul {
   list-style: none;
 }
+
+.tabs a.active {
+  font-weight: bold;
+}
+
+article {
+  display: none;
+}
+
+article.active {
+  display: block;
+}
