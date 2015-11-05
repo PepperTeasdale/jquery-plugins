@@ -1,0 +1,23 @@
+body, html, h1, ul, li, head, section, article, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+  text-align: inherit;
+
+  font-family: sans-serif;
+}
+
+.group {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
