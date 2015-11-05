@@ -1,0 +1,50 @@
+body, h1, figure, ul, html, li, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-align: inherit;
+  text-decoration: inherit;
+  font: inherit;
+  font-family: sans-serif;
+
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.items {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+}
+
+li {
+  display: none;
+  position: absolute;
+}
+
+.active {
+  display: block;
+  left: 0%;
+  transition: left 500ms;
+}
+
+.right {
+  /*position: absolute;*/
+  left: 100%;
+}
+
+.left {
+  /*position: absolute;*/
+  left: -100%;
+}
