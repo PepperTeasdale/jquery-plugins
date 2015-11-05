@@ -1,0 +1,29 @@
+html body div img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  text-align: inherit;
+  text-decoration: inherit;
+  font: inherit;
+  font-family: sans-serif;
+  background: transparent;
+}
+
+div {
+  height: auto;
+  width: 1000px;
+  position: relative;
+}
+
+div.zoomable img {
+  width: 100%;
+  overflow: hidden;
+}
+
+div.focus-box {
+  position: absolute;
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
