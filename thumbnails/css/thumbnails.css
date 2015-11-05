@@ -1,0 +1,31 @@
+html, body, div, img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  text-align: inherit;
+  text-decoration: inherit;
+  font: inherit;
+  font-family: sans-serif;
+  background: transparent;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.gutter-images img {
+  width: 20%;
+  display: block;
+  float: left;
+}
+
+.thumbnails {
+  width: 400px;
+}
+
+div.active {
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="../../jquery-2.1.4.js"></script>
+    <script src="../js/thumbnails.js"></script>
+    <link href="../css/thumbnails.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="thumbnails">
+      <div class="active">
+      </div>
+      <div class="gutter-images group">
+        <img src="http://placecorgi.com/300/300">
+        <img src="http://placehold.it/300x300">
+        <img src="http://placecorgi.com/300/300">
+        <img src="http://placehold.it/300x300">
+        <img src="http://placecorgi.com/300/300">
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        $('.thumbnails').thumbnails();
+      })
+    </script>
+  </body>
+</html>
