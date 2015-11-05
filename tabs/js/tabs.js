@@ -15,9 +15,25 @@ $.fn.tabs = function () {
 };
 
 $.Tabs.prototype.clickTab = function(event) {
+    // debugger
   this.$activeTab.removeClass("active");
-  this.$contentTabs.children().removeClass("active");
-  this.$activeTab = $(event.currentTarget);
-  this.$activeTab.addClass("active");
-  $(this.$activeTab.attr("href")).addClass("active");
+  var $activeContent = $(this.$activeTab.attr("href"))
+  // this.$contentTabs.children().removeClass("active");
+  $activeContent.addClass("transitioning");
+  var tabContext = this;
+
+  $activeContent.one("transitionend", function(event2) {
+    $(this).removeClass("transitioning");
+    $activeContent.removeClass("active");
+    tabContext.$activeTab = $(event.currentTarget);
+    tabContext.$activeTab.addClass("active");
+
+    $activeContent = $(tabContext.$activeTab.attr("href"));
+    $activeContent.addClass("active transitioning");
+
+    setTimeout(function () {
+      $activeContent.removeClass("transitioning")
+    }, 0);
+  })
+
 }

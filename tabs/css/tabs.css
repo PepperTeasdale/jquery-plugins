@@ -32,4 +32,12 @@ article {
 
 article.active {
   display: block;
+  transition: opacity 500ms;
+}
+
+.transitioning {
+  display: block;
+  opacity: 0;
+  /*transition-property: opacity;
+  transition-duration: 500ms;*/
 }
