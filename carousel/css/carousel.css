@@ -40,11 +40,11 @@ li {
 }
 
 .right {
-  /*position: absolute;*/
+  position: absolute;
   left: 100%;
 }
 
 .left {
-  /*position: absolute;*/
+  position: absolute;
   left: -100%;
 }
